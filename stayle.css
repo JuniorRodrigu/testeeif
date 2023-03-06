@@ -1,0 +1,118 @@
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #202030;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+/*aqui <button type="submit" id="continuar" name="submit">Continuar</button>*/
+#continuar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3264fe;
+  width: 15vw;
+  height: 8vh;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 45px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.adiction {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  font-size: 40px;
+  border: none;
+  background-color: #ffffff;
+  color: #202030;
+  width: 15vw;
+  height: 10vh;
+}
+#quantidade{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#decrement {
+  color: #3264fe;
+  background-color: #ffffff;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 15px 5px 15px 25px;
+  border-radius: 45px 0 0 45px;
+}
+
+#increment {
+  color: #3264fe;
+  background-color: #ffffff;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  padding: 15px 25px 15px 5px;
+  border-radius: 0 45px 45px 0;
+}
+
+#total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0af358;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 25px;
+  width: 20vw;
+  height: 8vh;
+}
+
+/* Estilos para dispositivos móveis com largura menor que 500px */
+@media (max-width:800px) {
+  body{
+    background-color: #e20707;
+  }
+}
